@@ -14,8 +14,8 @@ Just a little repo to test the [Nestjs Typeorm paginate](https://github.com/nest
 
 - This project use a module to inject all the entities repositories for easiness in the latter use in others modules. but it may not be the best pattern.
 
+- Accessing the `http://localhost:3000/seed` route will trigger a simple random seeding of the DB using faker.
+
 ## TODO
 
 - Add tests
-
-- Add DB seeds
