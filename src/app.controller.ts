@@ -9,4 +9,16 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  // INFO: Should be a Post. Use Get for ease of use
+  @Get('seed')
+  seedDB(): Promise<boolean> {
+    return this.appService.seedDB();
+  }
+
+  // INFO: Should be a Post. Use Get for ease of use
+  @Get('truncate')
+  truncateDB(): Promise<boolean> {
+    return this.appService.truncateDB();
+  }
 }

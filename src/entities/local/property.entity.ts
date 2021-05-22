@@ -21,7 +21,7 @@ export class Property extends BaseEntity {
   @Column()
   clientId: string;
 
-  @ManyToOne(() => Client, (client) => client.imovel)
+  @ManyToOne(() => Client, (client) => client.property)
   client: Client;
 
   // ************
@@ -30,7 +30,7 @@ export class Property extends BaseEntity {
   address: string;
 
   @Column({ nullable: true })
-  postalCode: string;
+  zipCode: string;
 
   @Column({ nullable: true })
   city: string;

@@ -36,7 +36,7 @@ export class Client extends BaseEntity {
   emails?: Email[];
 
   @OneToMany(() => Property, (property) => property.client)
-  imovel?: Property[];
+  property?: Property[];
 
   @OneToMany(() => Website, (website) => website.client)
   websites?: Website[];
@@ -47,7 +47,7 @@ export class Client extends BaseEntity {
   // ****************************
 
   @Column({ nullable: true })
-  description: string;
+  description?: string;
 
   @CreateDateColumn()
   createdAt: Date;

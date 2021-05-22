@@ -19,7 +19,7 @@ export class ClientController {
     return this.clientSvc.getPaginatedClients({
       page,
       limit,
-      route: 'http://localhost:3000/client/paginated',
+      route: '/client/paginated',
     });
   }
 }
