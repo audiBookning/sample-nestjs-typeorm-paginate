@@ -16,6 +16,8 @@ Just a little repo to test the [Nestjs Typeorm paginate](https://github.com/nest
 
 - Accessing the `http://localhost:3000/seed` route will trigger a simple random seeding of the DB using faker.
 
+- Accessing the `http://localhost:3000/truncate` route will trigger a the cleaning of the DB.
+
 ## TODO
 
 - Add tests

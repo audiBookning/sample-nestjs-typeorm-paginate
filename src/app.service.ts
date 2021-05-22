@@ -18,16 +18,23 @@ export class AppService {
     return true;
   }
 
+  // INFO: Since the schema is very simple and all the other entities are linked to a client,
+  // Truncating the client table with cascade is also truncating all the others
   async truncateDB(): Promise<boolean> {
-    const entityManager = getManager();
-    await entityManager.query(
-      `
-      select 'drop table if exists "' || tablename || '" cascade;' 
-      from pg_tables
-      where schemaname = 'public'; -- or any other schema
-      `,
-    );
-    return true;
+    try {
+      const entityManager = getManager();
+      const truncate = await entityManager.query(
+        `
+        TRUNCATE TABLE client 
+        CASCADE;
+        `,
+      );
+      console.log('truncate: ', truncate);
+      return true;
+    } catch (error) {
+      console.log('error: ', error);
+      throw error;
+    }
   }
 
   async createCliente() {
