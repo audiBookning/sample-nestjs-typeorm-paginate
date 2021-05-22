@@ -4,6 +4,8 @@ Just a little repo to test the [Nestjs Typeorm paginate](https://github.com/nest
 
 ## Notes
 
+- The DB used is Posgresql.
+
 - There is also a docker-compose file to be able to quickly start a Posgresql database without install on the operating system. The app was not put there as a service for a little more simplicity.
 
 - To run the DB: `docker-compose up`.
