@@ -21,3 +21,6 @@ Just a little repo to test the [Nestjs Typeorm paginate](https://github.com/nest
 ## TODO
 
 - Add tests
+
+License
+ISC © 2021 AudiBookning

@@ -1,8 +1,8 @@
 {
-  "name": "typeorm-paginate-test",
+  "name": "sample-typeorm-paginate-test",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "just testing some code",
+  "author": "audiBookning",
   "private": true,
   "license": "ISC",
   "scripts": {
