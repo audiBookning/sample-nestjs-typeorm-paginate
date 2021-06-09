@@ -22,5 +22,13 @@ Just a little repo to test the [Nestjs Typeorm paginate](https://github.com/nest
 
 - Add tests
 
+## Disclaimer
+
+This code is not and will never be maintained. It is just some random sample code.
+
+Feel free to copy and make any change you like.
+
+##
+
 License
 ISC © 2021 AudiBookning
