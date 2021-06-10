@@ -1,6 +1,6 @@
 # Nestjs Typeorm paginate - Test
 
-Part of a personal [list](https://github.com/audiBookning/sample-nestjs-codes) of random samples code for NestJS
+Part of a personal [list](https://github.com/audiBookning/samples-code-ressource-list) of random samples code
 
 Just a little repo to test the [Nestjs Typeorm paginate](https://github.com/nestjsx/nestjs-typeorm-paginate) package.
 
